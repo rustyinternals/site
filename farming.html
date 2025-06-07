@@ -105,7 +105,7 @@
         <h3>Bringing it all together</h3>
         <p>Since a plant cannot generate more yield if it grows slower than usual, the above value is capped to \(T_{\mathsf{stage}}\).</p>
         <p>To calculate the real plant yield of a stage, the theoretical maximum yield needs to be multiplied by the fraction of time taken.</p>
-        <p>The full formula can be expressed as \( f_y \times f_g \times q \times Y \times \mathsf{max}(1, {{\lfloor 1 + {{T_{\mathsf{stage}} \over f_g \times q} \rfloor}} \over T_{\mathsf{stage}}}) \)</p>
+        <p>The full formula can be expressed as \( f_y \times f_g \times q \times Y \times \mathsf{min}(1, {{\lfloor 1 + {{T_{\mathsf{stage}} \over f_g \times q} \rfloor}} \over T_{\mathsf{stage}}}) \)</p>
     </div>
     <script>
         let currentSelectionElement = document.getElementById("plant-selector");
