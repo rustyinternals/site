@@ -183,7 +183,7 @@
 
             for (let i = 0; i < 7; ++i) {
                 let stage = selectedPlantData.stages[i];
-                let length = stage.ignoreConditions ? 1 + stage.length : Math.trunc(1. + stage.length/(gFactor*quality));
+                let length = stage.ignoreConditions ? 1+stage.length : Math.trunc(1. + stage.length/(gFactor*quality));
                 yield += stage.yield * gFactor * yFactor * quality * Math.min(1., length/stage.length);
                 children[2+i].innerText = totalTime + " (" + length + ")";
                 if (i < 6)
